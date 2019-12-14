@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>About me</title>
+    {% endblock %}
+
+
+
+
+{% block content %}
+    <h1>Tukaj je nekaj o meni</h1>
+
+{% for mesto in mesta %}
+    <h2>Obiskal sem že</h2>
+    <h3>{{ mesto }}</h3>
+{% endfor %}
+{% endblock content %}
