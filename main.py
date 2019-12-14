@@ -11,7 +11,13 @@ def index():
 @app.route("/about")
 def on_about():
     # Preberemo datoteko:
-    return render_template("index.html")
+    mesta = ["Dunaj", "Gradec", "Trst"]
+    return render_template("about.html", page_title="O meni", mesta=mesta)
+
+@app.route("/contact")
+def contact():
+    # Preberemo datoteko:
+    return render_template("contact.html", page_title="Contact")
 
 @app.route("/home")
 def home():
