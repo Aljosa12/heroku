@@ -22,7 +22,7 @@ def contact():
 @app.route("/home")
 def home():
     # Preberemo datoteko:
-    return render_template("Bootstrap.html")
+    return render_template("bootstrap.html")
 
 
 
